@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Multimedia Webpage</title>
+</head>
+<body class="bg-white bg-cover bg-no-repeat min-h-screen">
+    <!----------main container------------>
+    <div class="container mx-auto px-4 py-8">
+
+        <!--------------------header--------------->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">Media Player</h2>
+            <h4 class="text-gray-600 mt-4">Enjoy your favourite media and audio content</h4>
+        </header>
+        <!------------------------media contents container-->
+        <div class="container space-y-8">
+            <!-------------------video section---------------->
+            <section class="bg-white rounded-lg p-6 shadow-lg">
+                <h2 class="text-3xl font-semibold text-gray-800 text-center mb-10">Video Player</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <video class="w-full rounded-lg" controls poster="Assets/town-8310950_1280.jpg" src="Assets/sample_1280x720_surfing_with_audio (1).mp4"></video>
+                </div>
+            </section>
+            <!----------------------audio section------------------>
+            <section class="bg-white rounded-lg p-6 shadow-lg">
+                <h2 class="text-2xl font-semibold text-gray-800 text-center mb-10">Audio Player</h2>
+                <div class="flex justify-center">
+                    <audio controls class="w-full max-w-md" src="Assets/forest-lullaby-110624.mp3" type="audio/mp3"></audio>
+                </div>
+            </section>
+        </div>
+        <!--------------------------------------footer Section--------------------------->
+        <footer class="text-center mt-12 text-gray-600">
+            <p>© 2024 Media Player. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
